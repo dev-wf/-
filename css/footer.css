@@ -1,0 +1,15 @@
+footer {
+    font-family: monospace;
+    bottom: 0;
+    height: 40px;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(255, 0, 0);
+}

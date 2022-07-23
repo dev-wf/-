@@ -1,0 +1,38 @@
+body {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+#logo {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+#btnmenu button {
+    font-size: small;
+    width: 200px;
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/*  Telas menores que 600px */
+@media screen and (max-width: 500px) {
+    #btnmenu button {
+        font-size: 10px;
+        height: 75px;
+    }
+}
