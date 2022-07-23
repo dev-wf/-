@@ -13,6 +13,6 @@ $("#btntres").click(function () {
 
 $("#btnquatro").click(function () {
     alert('CLICOU BUTTON 4');
-    window.location.replace("/recibo.html");
+    window.location.href("../recibo.html");
 
 });
