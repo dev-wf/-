@@ -11,7 +11,7 @@ $("#btntres").click(function () {
     alert('CLICOU BUTTON 3');
 });
 
-$("#btnquatro").click(function () {
+$("#btnquatro").click(function () { 
     alert('CLICOU BUTTON 4');
     window.location.assign("-/pages/default.html");
 
