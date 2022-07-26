@@ -1,0 +1,36 @@
+.conteudo {
+
+    margin: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0;
+    height: 300px;
+    font-size: 10px;
+}
+
+#logo {
+    height: 150px;
+}
+
+.conteudo input {
+    height: 20px;
+
+}
+
+#data {
+    text-align: center;
+    margin-right: 20px;
+    outline-style: none;
+}
+
+/*  Telas menores que 600px */
+@media screen and (max-width: 500px) {
+    .conteudo {
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    #data {
+        margin-right: 5px;
+    }
+}
