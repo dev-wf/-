@@ -1,5 +1,10 @@
 {
-    "name": "Mega Corp.",
-    "order_count": 83,
-    "address": "Infinity Loop Drive"
+    "usuarios": [
+        "Welington Fernandes",
+        "30150"
+    ],
+    "produtos": [
+        "cristal",
+        300
+    ]
 }
