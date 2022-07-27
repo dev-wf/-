@@ -1,12 +1,17 @@
-.conteudo {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+.conteudo {
+    font-family: 'Bebas Neue', cursive;
     margin: 0;
-    margin-left: 150px;
-    margin-right: 150px;
     padding: 0;
     height: 300px;
     font-size: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
+
 
 #logo {
     height: 150px;
@@ -21,6 +26,10 @@
     text-align: center;
     margin-right: 20px;
     outline-style: none;
+}
+
+.recibo {
+    font-size: 40px;
 }
 
 /*  Telas menores que 600px */

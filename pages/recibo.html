@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/recibo.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -23,34 +24,56 @@
         <ul class="nav d-flex justify-content-around align-content-center flex-nowrap flex-row">
 
             <li class="nav-item mx-1">
-                <button id="btnProjetos">PROJETOS</button>
+                <button id="btnProjetos">INICIO</button>
             </li>
             <li class="nav-item mx-1">
                 <button id="btnContato">CONTATO</button>
             </li>
-            <li class="nav-item mx-1">
-                <button id="btnSobre">SOBRE</button>
-            </li>
-
         </ul>
     </header>
     <!-- FIM HEADER -->
 
     <!-- MAIN -->
-    <main class="">
-        <div>
-            <img id="logo" src="../img/logo.png" class="rounded  mx-auto d-block" alt="...">
-        </div>
-
-        <a name="" id="" class="btn btn-primary" href="../template-danfe.html" role="button">Button</a>
+    <main>
 
 
+        <section class="get-in-touch">
+            <h4 class="title">Emissor de Recibos</h4>
+            <form class="contact-form row justify-content-between">
+                <div class="row justify-content-around">
+                    <div class="form-field col-lg-3">
+                        <input id="setData" class="input-text js-input" type="date" required>
+                    </div>
+                    <div class="form-field col-lg-3 ">
+                        <input placeholder="Valor: R$" id="setValor" class="input-text js-input" type="text" required>
+                    </div>
+                </div>
+                <div class="form-field col-lg-8">
+                    <input placeholder="Nome do Pagador:" id="setCliente" class="input-text js-input" type="text"
+                        required>
+                </div>
+                <div class="form-field col-lg-4 ">
+                    <input placeholder="CPF ou CNPJ (opcional)" id="setClienteDoc" class="input-text doc js-input"
+                        type="text" required>
+                </div>
 
-
-
-
-
-
+                <div class="form-field col-lg-12">
+                    <input placeholder="Referente à:" id="setReferente" class="input-text js-input" type="text"
+                        required>
+                </div>
+                <div class="form-field col-lg-8">
+                    <input placeholder="Nome do Emissor: " id="setEmissor" class="input-text js-input" type="text"
+                        required>
+                </div>
+                <div class="form-field col-lg-4 ">
+                    <input placeholder="CPF ou CNPJ (opcional)" id="setEmissorDoc" class="input-text doc js-input"
+                        type="email" required>
+                </div>
+                <div class="form-field col-lg-12">
+                    <input class="submit-btn" type="submit" value="Imprimir">
+                </div>
+            </form>
+        </section>
 
 
         <!-- MODAL CONTATO -->
