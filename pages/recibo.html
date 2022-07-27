@@ -39,10 +39,10 @@
 
         <section class="get-in-touch">
             <h4 class="title">Emissor de Recibos</h4>
-            <form class="contact-form row justify-content-between">
+            <form id="print" class="contact-form row justify-content-between">
                 <div class="row justify-content-around">
                     <div class="form-field col-lg-3">
-                        <input id="setData" class="input-text js-input" type="date" required>
+                        <input id="setData" class="input-text js-input" type="date">
                     </div>
                     <div class="form-field col-lg-3 ">
                         <input placeholder="Valor: R$" id="setValor" class="input-text js-input" type="text" required>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="form-field col-lg-4 ">
                     <input placeholder="CPF ou CNPJ (opcional)" id="setClienteDoc" class="input-text doc js-input"
-                        type="text" required>
+                        type="text">
                 </div>
 
                 <div class="form-field col-lg-12">
@@ -67,7 +67,7 @@
                 </div>
                 <div class="form-field col-lg-4 ">
                     <input placeholder="CPF ou CNPJ (opcional)" id="setEmissorDoc" class="input-text doc js-input"
-                        type="email" required>
+                        type="text">
                 </div>
                 <div class="form-field col-lg-12">
                     <input class="submit-btn" type="submit" value="Imprimir">
@@ -75,6 +75,10 @@
             </form>
         </section>
 
+        <!-- Full screen modal -->
+        <div id="modalFull" class="modal-dialog modal-fullscreen-sm-down">
+            ...
+        </div>
 
         <!-- MODAL CONTATO -->
         <div id="modalContato" class="modal">
