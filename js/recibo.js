@@ -15,5 +15,9 @@ $("#print").submit(function (event) {
 });
 */
 
+$("#print").submit(function (e) {
+    console.log("ok");
+    e.preventDefault();
 
+});
 
