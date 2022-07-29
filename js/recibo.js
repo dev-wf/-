@@ -34,9 +34,9 @@ $("#print").submit(function (event) {
 
 $("#print").submit(function (e) {
     if (setData.value == "") {
-        getData.innerText = SetdataNow;
+        getData.innerText = SetdataNow.split('-').reverse().join('/');
     } else {
-        getData.innerText = setData.value;
+        getData.innerText = setData.value.split('-').reverse().join('/');;
     }
     getValor.innerText = setValor.value;
     getCliente.innerText = setCliente.value;
