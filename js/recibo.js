@@ -16,7 +16,7 @@ $("#print").submit(function (event) {
 */
 
 $("#print").submit(function (e) {
-    console.log("ok");
+    console.log("CLICOU IMPRIMIR");
     e.preventDefault();
 
 });
