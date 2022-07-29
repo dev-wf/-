@@ -15,22 +15,7 @@ var setEmissor = document.getElementById("setEmissor");
 var getEmissor = document.getElementById("getEmissor");
 var setEmissorDoc = document.getElementById("setEmissorDoc");
 var getEmissorDoc = document.getElementById("getEmissorDoc");
-// 
 
-
-
-
-
-
-/*
-$("#print").submit(function (event) {
-    console.log("click: " + $("#setData").val());
-    if ($("#setData").val() == "") {
-        console.log("valor nulo");
-    }
-    event.preventDefault();
-});
-*/
 
 $("#print").submit(function (e) {
     if (setData.value == "") {
