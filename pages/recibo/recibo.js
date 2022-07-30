@@ -1,7 +1,11 @@
+console.log("recibo.js");
+
 var form = document.getElementById('formulario');
 //BUSCANDO FORM OS VALORES INSERIDOS (SET):
 
-
+const date = new Date();
+const hoje = date.toLocaleDateString();
+console.log(hoje);
 var data = document.getElementById('setData');
 var valor = document.getElementById('setValor');
 var cliente = document.getElementById('setCli');
@@ -40,8 +44,13 @@ $(document).on('keydown', '[data-mask-for-cpf-cnpj]', function (e) {
 
 
 form.addEventListener('submit', function (e) {
-    // a o apertar botao imprime e muda dados   
-    getData.innerText = data.value.split('-').reverse().join('/');
+    // a o apertar botao imprime e muda dados 
+    if (data.value == "") {
+        console.log("vazio");
+        getData.innerText = hoje.split('-').reverse().join('/');
+    } else {
+        getData.innerText = data.value.split('-').reverse().join('/');
+    }
 
     // formatando valor
     getValor.innerText = valor.value;

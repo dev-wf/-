@@ -7,11 +7,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #172A3A;
-    background: linear-gradient(-75deg, #1e1e1e, #111111, #000000, #111111, #1e1e1e);
-    background-size: 200% 100%;
-    -webkit-animation: gradient 15s ease infinite;
-    animation: gradient 15s ease infinite;
+    background: url(../../img/bg.jpg);
     color: aliceblue;
 
 }
@@ -36,6 +32,7 @@ header {
 }
 
 .btnIni {
+    margin-top: 10px;
     text-decoration: none;
     text-align: center;
     border: 1px solid white;
@@ -50,15 +47,16 @@ header {
 }
 
 main {
+
     display: grid;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 
 }
 
 .container {
     border: 1px solid #D70040;
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 700px;
     max-height: 300px;
     background-color: aliceblue;
