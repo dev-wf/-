@@ -1,5 +1,7 @@
 var form = document.getElementById('formulario');
 //BUSCANDO FORM OS VALORES INSERIDOS (SET):
+
+
 var data = document.getElementById('setData');
 var valor = document.getElementById('setValor');
 var cliente = document.getElementById('setCli');
@@ -20,7 +22,6 @@ var getDocEmissor = document.getElementById('getDocEmissor');
 //mascara valor:
 $('#setValor').keypress(function () {
     $(this).mask('R$ ###.##0,00', { reverse: true });
-
 });
 
 //mascara   cpf/cnpj:
@@ -31,7 +32,7 @@ $(document).on('keydown', '[data-mask-for-cpf-cnpj]', function (e) {
     var value = $(this).val().replace(/\D/g, '');
 
     var size = value.concat(digit).length;
-    console.log(size);
+
     $(this).mask((size <= 11) ? '000.000.000-00' : '00.000.000/0000-00');
 });
 
