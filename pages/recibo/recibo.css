@@ -41,7 +41,7 @@ header {
     border: 1px solid white;
     width: 80px;
     color: white;
-    background: #3a86ff;
+    background: #D70040;
 }
 
 .btnIni:hover {
@@ -57,7 +57,7 @@ main {
 }
 
 .container {
-    border: 2px solid #3a86ff;
+    border: 1px solid #D70040;
     margin-top: 2vh;
     max-width: 700px;
     max-height: 300px;
@@ -236,7 +236,7 @@ footer {
     color: black;
 }
 
-#getEmissor{
+#getEmissor {
     text-decoration: underline;
 }
 
@@ -320,7 +320,7 @@ footer {
 }
 
 .btnprint {
-    background-color: #3a86ff;
+    background-color: #D70040;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 80px;
@@ -328,8 +328,8 @@ footer {
 }
 
 .btnprint:hover {
-    background-color: #3a86ff;
-    color: red;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -406,7 +406,7 @@ footer {
 
     .sub {
 
-        color: #ff4a54;
+        color: #D70040;
         letter-spacing: 1em;
     }
 
@@ -702,7 +702,7 @@ footer {
         margin: 25px;
         font-family: "Roboto", sans-serif;
         filter: hue-rotate(0deg);
-        border: 1px solid #3a86ff;
+        border: 1px solid #ff3a3a;
         transition: all 0.1s linear;
     }
 
@@ -721,7 +721,7 @@ footer {
         left: 0;
         width: 100%;
         height: 3px;
-        background: linear-gradient(90deg, transparent, #3a86ff);
+        background: linear-gradient(90deg, transparent, #ff3a3a);
         animation: animate1 1s linear infinite;
     }
 
@@ -741,7 +741,7 @@ footer {
         right: 0;
         width: 3px;
         height: 100%;
-        background: linear-gradient(180deg, transparent, #3a86ff);
+        background: linear-gradient(180deg, transparent, #ff0000);
         animation: animate2 1s linear infinite;
         animation-delay: 0.25s;
     }
@@ -761,7 +761,7 @@ footer {
         bottom: 0;
         right: 0;
         width: 100%;
-        background: linear-gradient(270deg, transparent, #3a86ff);
+        background: linear-gradient(270deg, transparent, #ff0000);
         animation: animate3 1s linear infinite;
         animation-delay: 0.5s;
     }
@@ -784,7 +784,7 @@ footer {
         left: 0;
         width: 3px;
         height: 100%;
-        background: linear-gradient(360deg, transparent, #3a86ff);
+        background: linear-gradient(360deg, transparent, #ff0000);
         animation: animate4 1s linear infinite;
         animation-delay: 0.75s;
     }
