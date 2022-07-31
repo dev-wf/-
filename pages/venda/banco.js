@@ -1,7 +1,3 @@
-console.log("venda.js");
-//CRUD 
-import jsondb from './venda.json' assert {type: 'json'}
-// C = CREATE, R = READ, U = UPDATE, D = DELETE
 function bd() {
 
     var empresa = JSON.stringify({
@@ -29,19 +25,7 @@ function bd() {
 
     var db = JSON.parse(parse);
 
-    console.log(db);
+    console.log(db.endereco.cidade);
 
 }
-
-bd();
-
-
-
-
-
-
-
-
-
-
 
