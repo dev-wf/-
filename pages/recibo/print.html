@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./print.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <title>Recibo Gerado com sucesso...</title>
 </head>
 
 <body onload="timer()">
-    <p id="pData">DATA</p>
-    <p id="pValor">VALOR</p>
-    <p id="pCliente">CLIENTE</p>
-    <p id="pDocCli">DOCCLI</p>
-    <p id="pReferente">REFERENTE</p>
-    <p id="pEmissor">EMISSOR</p>
-    <p id="pDocEmissor">DOC EMISSOR</p>
+
+    <div class="table-div m-t-20">
+        <div class="columns">
+            <div class="column">
+                <h1 class="title is-size-5 has-text-centered">Recibo de Prestação de Serviço</h1>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column has-text-left"><b class=""></b></div>
+            <div class="column has-text-right">
+                <span class="is-block"></span>
+                <p>R$:
+                    <b id="pValor" class="borda-preco"> 00,00</b>
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column recibo-p">
+                <p>Recebi(emos) de <b id="pCliente">Cliente</b> - CPF/CNPJ nº <b id="pDocCli">437.168.168-92</b>, a
+                    importância de R$: <b id="pExtenso">cem reais</b>
+                    referente à: <br><b id="pReferente">Computador</b>.</p>
+                <p>Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos, dando plena, rasa
+                    e irrevogável quitação, pelo valor recebido.</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <p id="pData" class="has-text-right"> 00/00/0000</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column has-text-centered">
+                <span class="borda-assinatura">
+                    <p id="pEmissor">WF TECH-Developer</p>
+                </span>
+                <p id="pDocEmissor">CNPJ: 43.652.172/0001</p>
+            </div>
+        </div>
+    </div>
+
     <script src="./bd.js"></script>
 </body>
 

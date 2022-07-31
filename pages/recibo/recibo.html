@@ -34,21 +34,21 @@
                     </div>
                     <div class="lblValor">
                         <label for="">VALOR:
-                            <input name="valor" maxlength="10" id="setValor" placeholder="00,00" type="text"
+                            <input required name="valor" maxlength="10" id="setValor" placeholder="00,00" type="text"
                                 value=""></label>
                     </div>
                     <div class="lblPagador">
                         <label for="">Nome do Pagador:
-                            <input name="cliente" class="btnNome" id="setCli" maxlength="25" placeholder="Cliente"
-                                type="text"></label>
+                            <input required name="cliente" class="btnNome" id="setCli" maxlength="25"
+                                placeholder="Cliente" type="text"></label>
                         <label for="">CPF ou CNPJ (opcional):
-                            <input name="docCliente" data-mask-for-cpf-cnpj class="btnDocumento" id="setDocCli"
+                            <input required name="docCliente" data-mask-for-cpf-cnpj class="btnDocumento" id="setDocCli"
                                 minlength="11" maxlength="18" placeholder="00.000.000/0001-00" type="text"></label>
                     </div>
                     <div class="lblReferente">
                         <label for="">
-                            Referente à: </label> <input name="descricao" id="setDescricao" type="text" maxlength="50"
-                            placeholder="Descrição do pagamento">
+                            Referente à: </label> <input required name="descricao" id="setDescricao" type="text"
+                            maxlength="50" placeholder="Descrição do pagamento">
                     </div>
 
                     <div class="lblEmissor">

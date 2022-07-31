@@ -19,6 +19,7 @@ if (db.data == "") {
     $("#pData").text(db.data.split('-').reverse().join('/'));
 }
 $("#pValor").text(db.valor);
+$("#pExtenso").text(db.valor);
 $("#pCliente").text(db.cliente);
 $("#pDocCli").text(db.docCliente);
 $("#pReferente").text(db.referente);
