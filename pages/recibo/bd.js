@@ -1,4 +1,5 @@
 //Pega o registro STORAGE no localstorage.
+
 var registro = localStorage.getItem("recibodb");
 var parse = JSON.parse(registro);
 var db = JSON.parse(parse);
@@ -24,7 +25,11 @@ $("#pReferente").text(db.referente);
 $("#pEmissor").text(db.emissor);
 $("#pDocEmissor").text(db.docEmissor);
 window.print();
-function retorno() {
-    window.alert('Obrigado :)');
-    window.location.assign('./recibo.html');
+function timer() {
+    setTimeout(function () {
+        alert('Obrigado por usar nosso sistema! :)');
+        window.location.assign('./recibo.html');
+    }, 500);
 }
+
+
