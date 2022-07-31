@@ -29,7 +29,7 @@ function timer() {
     setTimeout(function () {
         alert('Obrigado por usar nosso sistema! :)');
         window.location.assign('./recibo.html');
-    }, 500);
+    }, 1000);
 }
 
 
