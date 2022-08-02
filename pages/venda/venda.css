@@ -43,3 +43,9 @@
         margin-right: 5px;
     }
 }
+
+#app {
+    display: inline-grid;
+    width: 600px;
+    
+}
