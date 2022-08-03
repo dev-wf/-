@@ -6,47 +6,61 @@
 
 :root {
     --primary-color: #D96AA7;
-    --secondary-color: #422C73;
+    --secondary-color: #000000;
     --complimentary-color: #88BFB5;
     --contrast-color: #F2E527;
-    --light-color: #D2A9D9;
+    --light-color: #212121;
 }
 
 .conteudo {
-    background: #191919;
+    background: url("../../img/bg.jpg");
+    background-size: cover;
     min-height: 100vh;
     font-family: Montserrat, sans-serif;
 }
 
 nav a {
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
     text-decoration: none;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
+nav a:hover {
+    color: rgb(255, 0, 0);
+}
+
+main {
+    margin-left: 100px;
+
+}
+
 nav {
+    border-right: 2px solid white;
     position: fixed;
     left: 0;
     z-index: 50;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     height: 100vh;
     background: var(--secondary-color);
 }
 
 section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     position: absolute;
     top: 0;
     height: 100vh;
     width: 0;
     opacity: 0;
     transition: all ease-in .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
 }
 
 section h1 {
@@ -58,6 +72,7 @@ section h1 {
 
 /* Styles applied on trigger */
 section:target {
+
     opacity: 1;
     position: absolute;
     left: 0;
@@ -72,20 +87,36 @@ section:target h1 {
 }
 
 #first {
-    background: var(--primary-color);
+
+    background: url("../../img/bg.jpg");
+    background-size: cover;
 }
 
 #second {
-    background: var(--complimentary-color);
+    background: url("../../img/bg.jpg");
+    background-size: cover;
 }
 
 #third {
-    background: var(--contrast-color);
+    background: url("../../img/bg.jpg");
+    background-size: cover;
 }
 
 #fourth {
-    background: var(--light-color);
+    background: url("../../img/bg.jpg");
+    background-size: cover;
 }
+
+#close {
+    margin: 25px;
+    font-size: 25px;
+    color: #ff0000;
+}
+
+.cliHeader {
+    display: flex;
+}
+
 
 @keyframes fadeIn {
     100% {
