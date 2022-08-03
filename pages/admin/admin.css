@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
 :root {
@@ -9,35 +9,33 @@
     --secondary-color: #000000;
     --complimentary-color: #88BFB5;
     --contrast-color: #F2E527;
-    --light-color: #212121;
+    --light-color: #00ff2f;
 }
 
 .conteudo {
     background: url("../../img/bg.jpg");
     background-size: cover;
-    min-height: 100vh;
-    font-family: Montserrat, sans-serif;
+    height: 100vh;
+    left: 100px;
+    padding-left: 100px;
 }
 
-nav a {
+nav button {
     font-size: 25px;
-    color: #fff;
+    background: transparent;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 25px;
     text-align: center;
 }
 
-nav a:hover {
+nav button:hover {
     color: rgb(255, 0, 0);
 }
 
-main {
-    margin-left: 100px;
 
-}
 
 nav {
-    border-right: 2px solid white;
     position: fixed;
     left: 0;
     z-index: 50;
@@ -49,26 +47,19 @@ nav {
 }
 
 section {
-    display: flex;
-    margin-left: 100px;
     position: absolute;
     top: 0;
     height: 100vh;
     width: 0;
     opacity: 0;
     transition: all ease-in .5s;
-}
-
-section h1 {
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styles applied on trigger */
 section:target {
-
     opacity: 1;
     position: absolute;
     left: 0;
@@ -77,40 +68,20 @@ section:target {
     z-index: 10;
 }
 
-section:target h1 {
-    opacity: 0;
-    animation: 2s fadeIn forwards .5s;
-}
-
 #first {
-
-    background: url("../../img/bg.jpg");
-    background-size: cover;
+    background: var(--primary-color);
 }
 
 #second {
-    background: url("../../img/bg.jpg");
-    background-size: cover;
+    background: var(--complimentary-color);
 }
 
 #third {
-    background: url("../../img/bg.jpg");
-    background-size: cover;
+    background: var(--contrast-color);
 }
 
 #fourth {
-    background: url("../../img/bg.jpg");
-    background-size: cover;
-}
-
-#close {
-    margin: 25px;
-    font-size: 25px;
-    color: #ff0000;
-}
-
-.cliHeader {
-    display: flex;
+    background: var(--light-color);
 }
 
 
