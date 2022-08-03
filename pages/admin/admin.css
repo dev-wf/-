@@ -21,6 +21,8 @@
 }
 
 nav button {
+    border: none;
+    text-decoration: none;
     font-size: 25px;
     background: transparent;
     color: rgb(255, 255, 255);
