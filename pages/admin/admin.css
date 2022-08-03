@@ -50,17 +50,13 @@ nav {
 
 section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    margin-left: 100px;
     position: absolute;
     top: 0;
     height: 100vh;
     width: 0;
     opacity: 0;
     transition: all ease-in .5s;
-
-
 }
 
 section h1 {
