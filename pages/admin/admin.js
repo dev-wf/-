@@ -6,7 +6,7 @@ var q = true;
 
 $("#btnFirst").click(function (e) {
     if (f == true) {
-        window.location.href = '#first';
+        window.location.href = '#clientes';
         // window.alert('CLICOU');        
         f = false;
         console.log(f);
@@ -20,7 +20,7 @@ $("#btnFirst").click(function (e) {
 
 $("#btnSecond").click(function (e) {
     if (s == true) {
-        window.location.href = '#second';
+        window.location.href = '#vendas';
         // window.alert('CLICOU');        
         s = false;
         console.log(s);
@@ -35,7 +35,7 @@ $("#btnSecond").click(function (e) {
 
 $("#btnThird").click(function (e) {
     if (t == true) {
-        window.location.href = '#third';
+        window.location.href = '#servicos';
         // window.alert('CLICOU');        
         t = false;
         console.log(t);
@@ -50,7 +50,7 @@ $("#btnThird").click(function (e) {
 
 $("#btnFour").click(function (e) {
     if (q == true) {
-        window.location.href = '#fourth';
+        window.location.href = '#financeiro';
         // window.alert('CLICOU');        
         q = false;
         console.log(q);

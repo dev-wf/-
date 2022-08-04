@@ -70,19 +70,19 @@ section:target {
     z-index: 10;
 }
 
-#first {
+#clientes {
     background: var(--primary-color);
 }
 
-#second {
+#vendas {
     background: var(--complimentary-color);
 }
 
-#third {
+#servicos {
     background: var(--contrast-color);
 }
 
-#fourth {
+#financeiro {
     background: var(--light-color);
 }
 
